@@ -1,0 +1,95 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                |
+| \\      /  F ield         | cfMesh: A library for mesh generation          | 
+|  \\    /   O peration     |                                                |
+|   \\  /    A nd           | Author: Franjo Juretic                         | 
+|    \\/     M anipulation  | E-mail: franjo.juretic@c-fields.com            |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version   2.0;
+    format    ascii;
+    class     dictionary;
+    location  "system";
+    object    meshDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+surfaceFile "hvac.stl";
+
+maxCellSize 0.075;
+
+boundaryCellSize 0.075;
+
+minCellSize 0.075;
+
+localRefinement
+{
+    "(tembok|electronics|human|inlet|outlet)"
+    {
+        cellSize 0.04;
+    } 
+}
+
+boundaryLayers
+{
+    nLayers 5;
+
+    thicknessRatio 1.2;
+
+    maxFirstLayerThickness 0.01;
+
+//    patchBoundaryLayers
+//    {
+//    }
+}
+
+renameBoundary
+{
+    defaultName		fixedWalls;
+    defaultType		wall;
+
+    newPatchNames
+    {
+        inlet
+        {
+            newName     inlet;
+            newType     patch;
+        }
+
+        outlet
+        {
+            newName     outlet;
+            newType     patch;
+        }
+
+	dinding
+        {
+            newName     dinding;
+            newType     wall;
+        }
+
+	tembok
+        {
+            newName     tembok;
+            newType     wall;
+        }
+
+	human
+        {
+            newName     human;
+            newType     wall;
+        }
+
+	electronics
+        {
+            newName     electronics;
+            newType     wall;
+        }
+    }
+}
+               
+     
+// ************************************************************************* //

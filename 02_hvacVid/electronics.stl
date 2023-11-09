@@ -1,0 +1,30 @@
+solid electronics
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex   2.031000e+00 1.754000e+00 5.992600e-01
+      vertex   2.770000e-01 1.754000e+00 5.992600e-01
+      vertex   2.031000e+00 2.180000e+00 5.992600e-01
+    endloop
+  endfacet
+  facet normal -0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex   2.031000e+00 2.180000e+00 5.992600e-01
+      vertex   2.770000e-01 1.754000e+00 5.992600e-01
+      vertex   2.770000e-01 2.180000e+00 5.992600e-01
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex   2.271740e+00 2.880100e-01 5.992600e-01
+      vertex   1.250000e+00 2.880100e-01 5.992600e-01
+      vertex   2.271740e+00 5.300100e-01 5.992600e-01
+    endloop
+  endfacet
+  facet normal -0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex   2.271740e+00 5.300100e-01 5.992600e-01
+      vertex   1.250000e+00 2.880100e-01 5.992600e-01
+      vertex   1.250000e+00 5.300100e-01 5.992600e-01
+    endloop
+  endfacet
+endsolid electronics
